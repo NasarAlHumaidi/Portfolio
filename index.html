@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portoflio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!--portoflio style-->
+  <style>
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 20px auto;
+      overflow: hidden;
+      max-width: 900px; /* Adjust the max-width as per your requirement */
+    }
+  
+    .slideshow-slide {
+      position: relative;
+    }
+  
+    .slideshow-image {
+      display: none;
+      width: 100%;
+      height: auto; /* Adjust the height as per your requirement */
+      object-fit: cover;
+    }
+  
+    .slideshow-image.active {
+      display: block;
+    }
+  
+    .slideshow-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+  
+    .slideshow-link {
+      display: block;
+      position: relative;
+    }
+  
+    .slideshow-link a {
+      pointer-events: auto;
+      display: block;
+    }
+  
+    .slideshow-slide:hover .slideshow-text {
+      opacity: 1;
+    }
+  
+    .slideshow-text h3,
+    .slideshow-text p {
+      margin: 0;
+      text-align: center;
+    }
+  
+    .slideshow-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #b8b4b4;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+  
+    .slideshow-arrow:hover {
+      color: #e0aaaa;
+    }
+  
+    .slideshow-arrow.left {
+      left: 10px;
+    }
+  
+    .slideshow-arrow.right {
+      right: 10px;
+    }
+  </style>
+  
+  
+  
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-imgg.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Nasar AlHumaidi</a></h1>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Nasar AlHumaidi</h1>
+      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Engineer, Researcher"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>&bull; Skilled Mechanical Engineer with a passion for Interactive Media (IM)</p>
+          <p>&bull; Creates visually stunning and user-friendly websites</p>
+          <p>&bull; Combines technical expertise with creative flair</p>
+          <p>&bull; Stays updated with the latest industry trends and emerging technologies</p>
+          <p>&bull; Delivers cutting-edge solutions</p>
+          <p>&bull; Excels in translating client requirements into effective website solutions</p>
+          <p>&bull; Dedicated to building responsive websites, optimizing performance, and integrating captivating visuals</p>
+        </div>
+
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Engineer &amp; Web Developer.</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 Jan 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+971 50 997 8677</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Abu Dhabi, UAE</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Undergraduate</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>Na2703@nyu.edu</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+   
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C+ <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">MatLab <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Microsoft Office Skills (Word, PowerPoint, Excel) <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+        <embed src="CV.pdf" type="application/pdf" width="100%" height="600px" />
+
+
+
+    </section><!-- End Resume Section -->
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Projects</h2>
+    </div>
+    <div class="slideshow">
+      <div class="slideshow-slide">
+        <div class="slideshow-link">
+        <img class="slideshow-image active" src="assets/img/portfolio/portfolio-4.jpg" alt="Slideshow Image 1">
+        <div class="slideshow-text">
+          <h3 style="text-align: center;">The Wait</h3>
+          <p>"The Wait" is a captivating video project that takes viewers on a thrilling narrative journey filled with anticipation, risk, and emotional turmoil. Through skillful storytelling and minimal dialogue, the project immerses the audience in a world of exaggerated emotions and the suspense of waiting.
+
+            The storyline revolves around a young girl who takes a daring step by sending a risky text message to her crush. Viewers are drawn into her world, experiencing the intense anticipation and anxiety as they eagerly await the response that will shape her hopes and dreams. With each scene, the video masterfully captures the girl's impatience, her constant phone-checking, the panic of a dead battery, and the frantic race to find a charger. The audience shares in her highs and lows, feeling the weight of hope and the sting of disappointment.</p>
+            <p style="margin-top: 20px;">Website: <a href="https://gunjan2713.github.io/video/" target="_blank">https://gunjan2713.github.io/video/</a></p>
+            <p style="margin-top: 20px;">GitHub: <a href="https://github.com/gunjan2713/video/tree/main" target="_blank">https://github.com/gunjan2713/video/tree/main</a></p>
+          </div>
+          </div>
+      </div>
+      <div class="slideshow-slide">
+        <div class="slideshow-link">
+          <img class="slideshow-image" src="assets/img/portfolio/portfolio-3.jpg" alt="Slideshow Image 2">
+          <div class="slideshow-text">
+            <h3 style="text-align: center;">Turn Around</h3>
+            <p>“Turn Around” is a soundscape in the form of a thrilling radio drama. This unique project relies on skillfully crafted sounds and minimal dialogues, complemented by a single image as a visual reference. The deliberate intention behind this approach is to empower the audience to engage their imagination, as their own minds become the source of fears and the provider of vivid mental imagery. By inviting active participation in the storytelling process, "Turn Around" offers an immersive experience where the boundaries of narrative are expanded, creating a deeply personalized journey for each listener.</p>
+            <p style="margin-top: 20px;">Website: <a href="https://nasaralhumaidi.github.io/Turn-Around-Sound-Assignment/" target="_blank">https://nasaralhumaidi.github.io/Turn-Around-Sound-Assignment/</a></p>
+            <p style="margin-top: 20px;">GitHub: <a href="https://github.com/NasarAlHumaidi/Turn-Around-Sound-Assignment.git" target="_blank">https://github.com/NasarAlHumaidi/Turn-Around-Sound-Assignment.git</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slideshow-slide">
+        <div class="slideshow-link">
+          <img class="slideshow-image" src="assets/img/portfolio/portfolio-2.jpg" alt="Slideshow Image 3">
+          <div class="slideshow-text">
+            <h3>Soldier, Poet, King</h3>
+            <p>"Soldier, Poet, and King: The Interactive Game" is a webcomic that immerses
+              users in a world of three distinct characters. Through an innovative and dynamic
+              experience, the comic introduces the concept of a game revolving around these
+              characters. The overarching theme explores the unique strengths and
+              weaknesses of the soldier, poet, and king. The comic comprises seven panels,
+              each carefully crafted to serve a purpose in the narrative. From the visually
+              captivating cover page showcasing the characters to the interactive elements like
+              the on/off button and character exploration screens, the project utilizes 2D
+              software to create an engaging and interactive web-based experience. By
+              pushing the boundaries of sequential art on a web page, the comic seeks to
+              captivate users and offer them an immersive journey into the world of the soldier,
+              poet, and king.</p>
+            <p style="margin-top: 20px;">Website: <a href="https://nasaralhumaidi.github.io/NasarAlHumaidi-Comic/" target="_blank">https://nasaralhumaidi.github.io/NasarAlHumaidi-Comic/</a></p>
+            <p style="margin-top: 20px;">GitHub: <a href="https://github.com/NasarAlHumaidi/NasarAlHumaidi-Comic.git" target="_blank">https://github.com/NasarAlHumaidi/NasarAlHumaidi-Comic.git</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slideshow-slide">
+        <div class="slideshow-link">
+          <img class="slideshow-image" src="assets/img/portfolio/portfolio-1.jpg" alt="Slideshow Image 4">
+          <div class="slideshow-text">
+            <h3>The Appreciation of Art and Nature</h3>
+            <p>"The Appreciation of Art and Nature" explores the inherent connection between art and nature, celebrating their beauty and influence on our daily lives. The overarching concept revolves around intertwining these elements, showcasing how they coexist harmoniously. The chosen theme embraces a lighthearted and artistic approach, highlighting the diverse facets that encompass our existence, from the tactile experience of touching dirt to the awe-inspiring architecture surrounding us. The goal was to create an engaging and interactive experience that captivates viewers, immersing them in the allure of art. Vibrant colors were deliberately selected, including the vivid green symbolizing nature, to enhance visual appeal and evoke a sense of wonder throughout the webpage.</p>
+            <p style="margin-top: 20px;">Website: <a href="https://nasaralhumaidi.github.io/Naser-AlHumaidi-Assignment-1/" target="_blank">https://nasaralhumaidi.github.io/Naser-AlHumaidi-Assignment-1/</a></p>
+            <p style="margin-top: 20px;">GitHub: <a href="https://github.com/NasarAlHumaidi/Naser-AlHumaidi-Assignment-1.git" target="_blank">https://github.com/NasarAlHumaidi/Naser-AlHumaidi-Assignment-1.git</a></p>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="slideshow-arrow left" onclick="changeSlide(-1)">&#10094;</div>
+      <div class="slideshow-arrow right" onclick="changeSlide(1)">&#10095;</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Abu Dhabi, Saadiyaat Island, New York University</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>Na2703@nyu.edu</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+971 50 997 8677</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1814.9521798234412!2d54.43273388835494!3d24.523391584792268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e5d876232c3eb%3A0x14e8727ec5ee2be1!2sNew%20York%20University%20Abu%20Dhabi!5e0!3m2!1sen!2sae!4v1686719776642!5m2!1sen!2sae" frameborder="0" style="border:0; width: 213%; height: 290px;" allowfullscreen></iframe>
+                </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+ 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+     var slideIndex = 1;
+    showSlide(slideIndex);
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function showSlide(n) {
+      var slides = document.getElementsByClassName("slideshow-image");
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    function jumpToTime(time) {
+      audio.currentTime = time;
+    }
+  </script>
+
+</body>
+
+</html>
